@@ -24,8 +24,8 @@ exports.getLabel = function(property, settings){
     // this is the object saved from your the /input portion of the slab.
     var searchTerm  = 'example';
 
-    if(settings && settings.pageId){
-        searchTerm  = settings.pageId;
+    if(settings && settings.id){
+        searchTerm  = settings.id
     }
 
     if(property === 'shares'){
