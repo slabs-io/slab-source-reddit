@@ -1,0 +1,18 @@
+{
+  "name": "facebook-page-likes-slab",
+  "version": "1.0.0",
+  "description": "source slab for FB page likess",
+  "main": "process/app.js",
+  "scripts": {
+    "test": "node ./test/getData.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benbrunton/facebook-page-likes-slab.git"
+  },
+  "author": "Ben Brunton <ben@slabs.io>",
+  "license": "MIT",
+  "dependencies": {
+    "q": "^1.1.2"
+  }
+}
