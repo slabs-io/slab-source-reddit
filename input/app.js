@@ -9,7 +9,7 @@ var compileObject = function (){
   var searchQuery   = $('#searchQuery').val();
 
   var settings = {
-    pageId : searchQuery
+    id : searchQuery
   };
 
   console.log(settings);

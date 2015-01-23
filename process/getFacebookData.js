@@ -30,10 +30,12 @@ var getToken = function(){
 var queryFacebook = function(query, access_token){
     var deferred = Q.defer();
 
+    var amp = query.indexOf('?') > -1 ? '&' : '?';
+
     var request = https.request({
         host:'graph.facebook.com',
         port:443,
-        path: '/v2.2/' + query + '?access_token=' + access_token,
+        path: '/v2.2/' + query + amp + 'access_token=' + access_token,
         method: 'GET',
         headers: {
             'User-Agent': 'slabs.io app'

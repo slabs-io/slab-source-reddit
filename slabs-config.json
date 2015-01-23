@@ -1,5 +1,5 @@
 {
-  "name" : "Facebook Page Likes",
+  "name" : "Facebook Shares",
   "type" : "source",
   "connectionsIn" : 1,
   "connectionsOut" : 3

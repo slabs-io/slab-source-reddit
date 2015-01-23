@@ -6,9 +6,13 @@ var Q       = require('q'),
 exports.getData = function(settings) {
     var deferred = Q.defer();
 
-    getFacebookData(settings.pageId).then(function(result) {
+    var id = encodeURIComponent(settings.id);
+    console.log(id);
+    getFacebookData('?id='+id).then(function(result) {
+        console.log(result);
+        var shares = result.share && result.share.share_count;
         deferred.resolve({
-            likes : result.likes
+            shares : shares
         });
     });
 
@@ -24,8 +28,8 @@ exports.getLabel = function(property, settings){
         searchTerm  = settings.pageId;
     }
 
-    if(property === 'likes'){
-        return 'Likes on ' + searchTerm + ' Facebook page';
+    if(property === 'shares'){
+        return 'Shares of ' + searchTerm + ' on Facebook';
     }
 
     return property + ' : bad property name';
