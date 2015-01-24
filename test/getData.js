@@ -1,11 +1,11 @@
 var source = require('../process/app');
 
 var settings = {
-    id: 'http://www.heatworld.com'
+    query: 'gabe'
 };
 source.getData(settings)
     .then(function(data){
-        if(data.shares !== undefined){
+        if(data.mentions !== undefined){
             console.log('test complete');
             console.log(data);
             console.log('success!');

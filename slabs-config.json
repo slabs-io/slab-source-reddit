@@ -1,5 +1,5 @@
 {
-  "name" : "Facebook Shares",
+  "name" : "Reddit Mentions",
   "type" : "source",
   "connectionsIn" : 1,
   "connectionsOut" : 3

@@ -1,7 +1,7 @@
 {
-  "name": "facebook-shares-slab",
+  "name": "reddit-search-slab",
   "version": "1.0.0",
-  "description": "source slab for FB shares",
+  "description": "source slab for Reddit",
   "main": "process/app.js",
   "scripts": {
     "test": "node ./test/getData.js"
