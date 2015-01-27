@@ -9,6 +9,7 @@
   "author": "Ben Brunton <ben@slabs.io>",
   "license": "MIT",
   "dependencies": {
-    "q": "^1.1.2"
+    "q": "^1.1.2",
+    "request": "^2.51.0"
   }
 }
