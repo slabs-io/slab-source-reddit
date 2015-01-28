@@ -26,10 +26,6 @@ exports.getLabel = function (property, settings) {
         searchTerm = settings.query;
     }
 
-    if (property === 'mentions') {
-        return 'Posts mentioning ' + searchTerm + ' on Reddit';
-    }
-
-    return property + ' : bad property name';
+    return 'Posts mentioning ' + searchTerm + ' on Reddit';
 
 };
