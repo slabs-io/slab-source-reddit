@@ -1,8 +1,9 @@
 var source = require('../process/app');
 
 var settings = {
-    query: 'gabe'
+    query: 'nsfw'
 };
+
 source.getData(settings)
     .then(function(data){
         if(data.mentions !== undefined){
@@ -13,6 +14,7 @@ source.getData(settings)
         }else{
             console.log('test failed:');
             console.log(data);
+            console.log('no mentions property');
             process.exit(1);
         }
     })
