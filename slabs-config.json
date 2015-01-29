@@ -1,6 +1,23 @@
 {
   "name" : "Reddit Mentions",
+  "description" : "Starts tracking the number of mentions on reddit of a specific keyword",
   "type" : "source",
   "connectionsIn" : 1,
-  "connectionsOut" : 3
+  "connectionsOut" : 3,
+  "schema" : {
+    "type": "object",
+    "properties" : {
+      "query": {
+        "type": "string",
+        "description" : "The term you want to monitor on reddit",
+        "minLength" : 2,
+        "default": "slabs",
+        "title": "Search Query"
+      }
+    }
+  },
+  "source": {
+    "label": "Reddit",
+    "url": "http://www.reddit.com/"
+  }
 }
