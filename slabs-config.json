@@ -13,7 +13,8 @@
         "description" : "The term you want to monitor on reddit",
         "minLength" : 2,
         "default": "slabs",
-        "title": "Search Query"
+        "title": "Search Query",
+        "brief": "Query"
       }
     }
   },
