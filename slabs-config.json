@@ -4,6 +4,7 @@
   "type" : "source",
   "connectionsIn" : 1,
   "connectionsOut" : 3,
+  "customIcon" : "fa-reddit",
   "schema" : {
     "type": "object",
     "properties" : {
